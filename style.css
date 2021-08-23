@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:@1&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+.about-speaking .container, .bible-textbox .container, .psychology-section1 .container, .img-posing-button .container {
+  width: 1640px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-speaking .container .speech-bubble, .about-speaking .container .side-bubble, .about-speaking .container .tb-posing .textbox, .psychology-section1 .container .tb-img-container .textbox, .img-posing-button .container .tb-posing .textbox, .img-posing-button .container .tb-posing .textbox a {
+  box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 0.75);
+}
+
+.img-posing-button .container .tb-posing .textbox a {
+  background-color: #6c2ef2;
+  border-radius: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 25px 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5625rem;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: black;
+}
+
+footer .footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer-nav .logo {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 3rem;
+  text-transform: initial;
+}
+
+footer .footer-nav div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 20px;
+}
+
+footer .footer-nav div a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+footer .social-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 50px auto 0 auto;
+}
+
+footer .social-container .social {
+  margin: 0 50px;
+}
+
+footer .social-container .social .fab {
+  color: #fff;
+  font-size: 5rem;
+}
+
+.about-speaking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+}
+
+.about-speaking .container {
+  justify-content: center;
+  align-items: center;
+}
+
+.about-speaking .container .speech-bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a6249d;
+  position: absolute;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  z-index: 99;
+  left: 25px;
+  top: 150px;
+}
+
+.about-speaking .container .side-bubble {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: #a6249d;
+  position: absolute;
+  left: -150px;
+  top: 270px;
+}
+
+.about-speaking .container .speaking-tb {
+  background-color: #6c2ef2;
+  color: #fff;
+  padding: 30px 50px;
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.about-speaking .container .tb-posing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-speaking .container .tb-posing .textbox {
+  width: 100%;
+  background-color: #a6249d;
+  color: #fff;
+  padding: 30px 50px;
+  z-index: 10;
+  margin-right: -100px;
+}
+
+.about-speaking .container .tb-posing img {
+  width: 100%;
+}
+
+.bible-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+}
+
+.bible-textbox .container {
+  justify-content: center;
+  align-items: center;
+}
+
+.bible-textbox .container .tb-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.bible-textbox .container .tb-img-container .textbox {
+  width: 150%;
+  background-color: #a6249d;
+  color: #fff;
+  padding: 30px 50px;
+  z-index: 10;
+  margin-left: -400px;
+  opacity: 70%;
+  transform: translateY(40%);
+}
+
+.bible-textbox .container .tb-img-container img {
+  width: 100%;
+}
+
+.psychology-section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+}
+
+.psychology-section1 .container {
+  justify-content: center;
+  align-items: center;
+}
+
+.psychology-section1 .container .tb-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.psychology-section1 .container .tb-img-container .textbox {
+  width: 100%;
+  background-color: #a6249d;
+  color: #fff;
+  padding: 30px 50px;
+  z-index: 10;
+  margin-right: -100px;
+}
+
+.psychology-section1 .container .tb-img-container img {
+  width: 100%;
+}
+
+.img-posing-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+}
+
+.img-posing-button .container {
+  justify-content: center;
+  align-items: center;
+}
+
+.img-posing-button .container .tb-posing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-posing-button .container .tb-posing .textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #a6249d;
+  color: #fff;
+  padding: 60px 50px 0px 50px;
+  z-index: 10;
+  margin-right: -100px;
+}
+
+.img-posing-button .container .tb-posing .textbox a {
+  text-align: center;
+  width: 300px;
+  transform: translateY(40%);
+}
+
+.img-posing-button .container .tb-posing img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
