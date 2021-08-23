@@ -32,6 +32,7 @@ $roboto: "Roboto", sans-serif;
   padding: 25px 60px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 }
 
 * {
@@ -268,6 +269,177 @@ footer {
       }
       img {
         width: 100%;
+      }
+    }
+  }
+}
+.truthHeart-section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+  .container {
+    @extend %container;
+    justify-content: center;
+    align-items: center;
+    .tb-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+      .textbox {
+        width: 150%;
+        background-color: $purple;
+        color: #fff;
+        padding: 30px 50px;
+        z-index: 10;
+        margin-left: -400px;
+        opacity: 70%;
+        transform: translateY(40%);
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.jarc-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+  .container {
+    @extend %container;
+    justify-content: center;
+    align-items: center;
+
+    .tb-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .textbox {
+        width: 100%;
+        background-color: $purple;
+        color: #fff;
+        padding: 50px 30px;
+        z-index: 10;
+        margin-right: -100px;
+        @extend %shadow;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.img-truthHeart-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+  .container {
+    @extend %container;
+    justify-content: center;
+    align-items: center;
+
+    .tb-posing {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .textbox {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        width: 100%;
+        background-color: $purple;
+        color: #fff;
+        padding: 60px 50px 0px 50px;
+        z-index: 10;
+        margin-right: -100px;
+        @extend %shadow;
+
+        a {
+          @extend %btn;
+          @extend %shadow;
+          text-align: center;
+          width: 300px;
+          transform: translateY(40%);
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.psychology-section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+  .container {
+    @extend %container;
+    justify-content: center;
+    align-items: center;
+    .tb-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+      .textbox {
+        width: 150%;
+        background-color: $purple;
+        color: #fff;
+        padding: 30px 50px;
+        z-index: 10;
+        margin-left: -400px;
+        opacity: 70%;
+        transform: translateY(40%);
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.bible-textbox-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+
+  .container {
+    @extend %container;
+    justify-content: center;
+    align-items: center;
+
+    .tb-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+      .textbox {
+        width: 150%;
+        background-color: $purple;
+        color: #fff;
+        padding: 30px 50px;
+        z-index: 10;
+        margin-left: -400px;
+        opacity: 70%;
+        transform: translateY(30%);
+        display: flex;
+        align-items: center;
+      }
+      img {
+        width: 100%;
+      }
+      .btn {
+        @extend %btn;
+        margin-left: 30px;
+        width: 300px;
+        opacity: initial;
       }
     }
   }
