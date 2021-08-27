@@ -63,6 +63,20 @@ section {
   align-items: center;
 }
 
+.slick {
+  background-color: #6c2ef2;
+  color: white;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.slick h1 {
+  font-size: 3.75rem;
+}
+
 footer {
   padding: 50px 0;
   background-color: black;
@@ -161,6 +175,12 @@ footer .social-container .social .fab {
   width: 100%;
 }
 
+.bible-textbox .slick {
+  position: absolute;
+  transform: translateY(50px);
+  z-index: -1;
+}
+
 .bible-textbox .tb-img-container {
   display: flex;
   align-items: center;
@@ -181,6 +201,10 @@ footer .social-container .social .fab {
 
 .bible-textbox .tb-img-container img {
   width: 100%;
+}
+
+.wall-of-text p {
+  padding: 50px 300px;
 }
 
 .psychology-section1 .tb-img-container {
@@ -228,6 +252,12 @@ footer .social-container .social .fab {
 
 .img-posing-button .tb-posing img {
   width: 100%;
+}
+
+.truthHeart-section1 .slick {
+  position: absolute;
+  transform: translateY(50px);
+  z-index: -1;
 }
 
 .truthHeart-section1 .tb-img-container {
@@ -299,6 +329,16 @@ footer .social-container .social .fab {
   width: 100%;
 }
 
+.wall-of-text-scroll p {
+  padding: 50px 300px;
+}
+
+.psychology-section4 .slick {
+  position: absolute;
+  transform: translateY(50px);
+  z-index: -1;
+}
+
 .psychology-section4 .tb-img-container {
   display: flex;
   align-items: center;
@@ -319,6 +359,12 @@ footer .social-container .social .fab {
 
 .psychology-section4 .tb-img-container img {
   width: 100%;
+}
+
+.bible-textbox-button .slick {
+  position: absolute;
+  transform: translateY(50px);
+  z-index: -1;
 }
 
 .bible-textbox-button .tb-img-container {

@@ -30,6 +30,7 @@ $roboto: "Roboto", sans-serif;
   text-align: center;
 }
 
+// Globals
 * {
   box-sizing: border-box;
   margin: 0;
@@ -68,6 +69,21 @@ section {
   justify-content: center;
   align-items: center;
 }
+.slick {
+  background-color: $blue;
+  color: white;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-size: 3.75rem;
+  }
+}
+
+//Footer Section
 footer {
   padding: 50px 0;
   background-color: black;
@@ -111,7 +127,7 @@ footer {
     }
   }
 }
-
+// Speaking Section 1
 .about-speaking {
   //   .text-scroll {
   //     background-color: $blue;
@@ -169,7 +185,19 @@ footer {
     }
   }
 }
+.wall-of-text {
+  p {
+    padding: 50px 300px;
+  }
+}
+
+// Speaking sectiion 2
 .bible-textbox {
+  .slick {
+    position: absolute;
+    transform: translateY(50px);
+    z-index: -1;
+  }
   .tb-img-container {
     display: flex;
     align-items: center;
@@ -190,6 +218,7 @@ footer {
     }
   }
 }
+
 .psychology-section1 {
   .tb-img-container {
     display: flex;
@@ -209,6 +238,7 @@ footer {
     }
   }
 }
+//Truth and Heart Section 3
 .img-posing-button {
   .tb-posing {
     display: flex;
@@ -242,6 +272,11 @@ footer {
   }
 }
 .truthHeart-section1 {
+  .slick {
+    position: absolute;
+    transform: translateY(50px);
+    z-index: -1;
+  }
   .tb-img-container {
     display: flex;
     align-items: center;
@@ -313,7 +348,17 @@ footer {
     }
   }
 }
+.wall-of-text-scroll {
+  p {
+    padding: 50px 300px;
+  }
+}
 .psychology-section4 {
+  .slick {
+    position: absolute;
+    transform: translateY(50px);
+    z-index: -1;
+  }
   .tb-img-container {
     display: flex;
     align-items: center;
@@ -334,7 +379,14 @@ footer {
     }
   }
 }
+
+// Home last section
 .bible-textbox-button {
+  .slick {
+    position: absolute;
+    transform: translateY(50px);
+    z-index: -1;
+  }
   .tb-img-container {
     display: flex;
     align-items: center;
