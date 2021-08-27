@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:@1&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
 .about-speaking .speech-bubble, .about-speaking .side-bubble, .about-speaking .tb-posing .textbox, .psychology-section1 .tb-img-container .textbox, .img-posing-button .tb-posing .textbox, .img-posing-button .tb-posing .textbox a, .jarc-section2 .tb-img-container .textbox, .img-truthHeart-button .tb-posing .textbox, .img-truthHeart-button .tb-posing .textbox a, .bible-textbox-button .tb-img-container .btn, .featured-devotional .container .content-container .btn {
   box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 0.75);
@@ -175,6 +175,10 @@ footer .social-container .social .fab {
   width: 100%;
 }
 
+.wall-of-text p {
+  padding: 50px 300px;
+}
+
 .bible-textbox .slick {
   position: absolute;
   transform: translateY(50px);
@@ -201,10 +205,6 @@ footer .social-container .social .fab {
 
 .bible-textbox .tb-img-container img {
   width: 100%;
-}
-
-.wall-of-text p {
-  padding: 50px 300px;
 }
 
 .psychology-section1 .tb-img-container {
