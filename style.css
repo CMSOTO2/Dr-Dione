@@ -1,17 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:@1&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
-.about-speaking .container, .bible-textbox .container, .psychology-section1 .container, .img-posing-button .container, .truthHeart-section1 .container, .jarc-section2 .container, .img-truthHeart-button .container, .psychology-section4 .container, .bible-textbox-button .container {
-  width: 1640px;
-  max-width: 90%;
-  display: flex;
-  flex-direction: column;
-}
-
-.about-speaking .container .speech-bubble, .about-speaking .container .side-bubble, .about-speaking .container .tb-posing .textbox, .psychology-section1 .container .tb-img-container .textbox, .img-posing-button .container .tb-posing .textbox, .img-posing-button .container .tb-posing .textbox a, .jarc-section2 .container .tb-img-container .textbox, .img-truthHeart-button .container .tb-posing .textbox, .img-truthHeart-button .container .tb-posing .textbox a {
+.about-speaking .speech-bubble, .about-speaking .side-bubble, .about-speaking .tb-posing .textbox, .psychology-section1 .tb-img-container .textbox, .img-posing-button .tb-posing .textbox, .img-posing-button .tb-posing .textbox a, .jarc-section2 .tb-img-container .textbox, .img-truthHeart-button .tb-posing .textbox, .img-truthHeart-button .tb-posing .textbox a, .bible-textbox-button .tb-img-container .btn, .featured-devotional .container .content-container .btn {
   box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 0.75);
 }
 
-.img-posing-button .container .tb-posing .textbox a, .img-truthHeart-button .container .tb-posing .textbox a, .bible-textbox-button .container .tb-img-container .btn {
+.img-posing-button .tb-posing .textbox a, .img-truthHeart-button .tb-posing .textbox a, .bible-textbox-button .tb-img-container .btn {
   background-color: #6c2ef2;
   border-radius: 40px;
   display: inline-block;
@@ -52,6 +45,22 @@ h3 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1.5625rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0 0 0;
+}
+
+.container {
+  width: 1640px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -101,19 +110,7 @@ footer .social-container .social .fab {
   font-size: 5rem;
 }
 
-.about-speaking {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0;
-}
-
-.about-speaking .container {
-  justify-content: center;
-  align-items: center;
-}
-
-.about-speaking .container .speech-bubble {
+.about-speaking .speech-bubble {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +124,7 @@ footer .social-container .social .fab {
   top: 150px;
 }
 
-.about-speaking .container .side-bubble {
+.about-speaking .side-bubble {
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -137,7 +134,7 @@ footer .social-container .social .fab {
   top: 270px;
 }
 
-.about-speaking .container .speaking-tb {
+.about-speaking .speaking-tb {
   background-color: #6c2ef2;
   color: #fff;
   padding: 30px 50px;
@@ -145,13 +142,13 @@ footer .social-container .social .fab {
   margin-bottom: 50px;
 }
 
-.about-speaking .container .tb-posing {
+.about-speaking .tb-posing {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about-speaking .container .tb-posing .textbox {
+.about-speaking .tb-posing .textbox {
   width: 100%;
   background-color: #a6249d;
   color: #fff;
@@ -160,30 +157,18 @@ footer .social-container .social .fab {
   margin-right: -100px;
 }
 
-.about-speaking .container .tb-posing img {
+.about-speaking .tb-posing img {
   width: 100%;
 }
 
-.bible-textbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0;
-}
-
-.bible-textbox .container {
-  justify-content: center;
-  align-items: center;
-}
-
-.bible-textbox .container .tb-img-container {
+.bible-textbox .tb-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
 }
 
-.bible-textbox .container .tb-img-container .textbox {
+.bible-textbox .tb-img-container .textbox {
   width: 150%;
   background-color: #a6249d;
   color: #fff;
@@ -194,29 +179,17 @@ footer .social-container .social .fab {
   transform: translateY(40%);
 }
 
-.bible-textbox .container .tb-img-container img {
+.bible-textbox .tb-img-container img {
   width: 100%;
 }
 
-.psychology-section1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0;
-}
-
-.psychology-section1 .container {
-  justify-content: center;
-  align-items: center;
-}
-
-.psychology-section1 .container .tb-img-container {
+.psychology-section1 .tb-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.psychology-section1 .container .tb-img-container .textbox {
+.psychology-section1 .tb-img-container .textbox {
   width: 100%;
   background-color: #a6249d;
   color: #fff;
@@ -225,29 +198,17 @@ footer .social-container .social .fab {
   margin-right: -100px;
 }
 
-.psychology-section1 .container .tb-img-container img {
+.psychology-section1 .tb-img-container img {
   width: 100%;
 }
 
-.img-posing-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0;
-}
-
-.img-posing-button .container {
-  justify-content: center;
-  align-items: center;
-}
-
-.img-posing-button .container .tb-posing {
+.img-posing-button .tb-posing {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.img-posing-button .container .tb-posing .textbox {
+.img-posing-button .tb-posing .textbox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,36 +220,24 @@ footer .social-container .social .fab {
   margin-right: -100px;
 }
 
-.img-posing-button .container .tb-posing .textbox a {
+.img-posing-button .tb-posing .textbox a {
   text-align: center;
   width: 300px;
   transform: translateY(40%);
 }
 
-.img-posing-button .container .tb-posing img {
+.img-posing-button .tb-posing img {
   width: 100%;
 }
 
-.truthHeart-section1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0;
-}
-
-.truthHeart-section1 .container {
-  justify-content: center;
-  align-items: center;
-}
-
-.truthHeart-section1 .container .tb-img-container {
+.truthHeart-section1 .tb-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
 }
 
-.truthHeart-section1 .container .tb-img-container .textbox {
+.truthHeart-section1 .tb-img-container .textbox {
   width: 150%;
   background-color: #a6249d;
   color: #fff;
@@ -299,29 +248,17 @@ footer .social-container .social .fab {
   transform: translateY(40%);
 }
 
-.truthHeart-section1 .container .tb-img-container img {
+.truthHeart-section1 .tb-img-container img {
   width: 100%;
 }
 
-.jarc-section2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0;
-}
-
-.jarc-section2 .container {
-  justify-content: center;
-  align-items: center;
-}
-
-.jarc-section2 .container .tb-img-container {
+.jarc-section2 .tb-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.jarc-section2 .container .tb-img-container .textbox {
+.jarc-section2 .tb-img-container .textbox {
   width: 100%;
   background-color: #a6249d;
   color: #fff;
@@ -330,29 +267,17 @@ footer .social-container .social .fab {
   margin-right: -100px;
 }
 
-.jarc-section2 .container .tb-img-container img {
+.jarc-section2 .tb-img-container img {
   width: 100%;
 }
 
-.img-truthHeart-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0;
-}
-
-.img-truthHeart-button .container {
-  justify-content: center;
-  align-items: center;
-}
-
-.img-truthHeart-button .container .tb-posing {
+.img-truthHeart-button .tb-posing {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.img-truthHeart-button .container .tb-posing .textbox {
+.img-truthHeart-button .tb-posing .textbox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,36 +289,24 @@ footer .social-container .social .fab {
   margin-right: -100px;
 }
 
-.img-truthHeart-button .container .tb-posing .textbox a {
+.img-truthHeart-button .tb-posing .textbox a {
   text-align: center;
   width: 300px;
   transform: translateY(40%);
 }
 
-.img-truthHeart-button .container .tb-posing img {
+.img-truthHeart-button .tb-posing img {
   width: 100%;
 }
 
-.psychology-section4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0;
-}
-
-.psychology-section4 .container {
-  justify-content: center;
-  align-items: center;
-}
-
-.psychology-section4 .container .tb-img-container {
+.psychology-section4 .tb-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
 }
 
-.psychology-section4 .container .tb-img-container .textbox {
+.psychology-section4 .tb-img-container .textbox {
   width: 150%;
   background-color: #a6249d;
   color: #fff;
@@ -404,49 +317,145 @@ footer .social-container .social .fab {
   transform: translateY(40%);
 }
 
-.psychology-section4 .container .tb-img-container img {
+.psychology-section4 .tb-img-container img {
   width: 100%;
 }
 
-.bible-textbox-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 75px 0;
-}
-
-.bible-textbox-button .container {
-  justify-content: center;
-  align-items: center;
-}
-
-.bible-textbox-button .container .tb-img-container {
+.bible-textbox-button .tb-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
 }
 
-.bible-textbox-button .container .tb-img-container .textbox {
+.bible-textbox-button .tb-img-container .textbox {
   width: 150%;
-  background-color: #a6249d;
+  background-color: rgba(166, 36, 157, 0.7);
   color: #fff;
   padding: 30px 50px;
   z-index: 10;
   margin-left: -400px;
-  opacity: 70%;
   transform: translateY(30%);
   display: flex;
   align-items: center;
 }
 
-.bible-textbox-button .container .tb-img-container img {
+.bible-textbox-button .tb-img-container img {
   width: 100%;
 }
 
-.bible-textbox-button .container .tb-img-container .btn {
+.bible-textbox-button .tb-img-container .btn {
   margin-left: 30px;
   width: 300px;
-  opacity: initial;
+  opacity: 1;
+}
+
+.featured-devotional .container {
+  background-color: #6c2ef2;
+  color: #fff;
+}
+
+.featured-devotional .container .content-container {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+}
+
+.featured-devotional .container .content-container div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.featured-devotional .container .content-container div .flex-end {
+  justify-content: flex-end;
+}
+
+.featured-devotional .container .content-container img {
+  width: 100%;
+}
+
+.featured-devotional .container .content-container .tb {
+  margin-left: 40px;
+  text-align: center;
+}
+
+.featured-devotional .container .content-container .tb h1 {
+  font-size: 3.4rem;
+  text-align: left;
+  padding-right: -50px;
+}
+
+.featured-devotional .container .content-container .tb h2 {
+  font-size: 2.1875rem;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.featured-devotional .container .content-container .tb p {
+  text-align: left;
+}
+
+.featured-devotional .container .content-container .btn {
+  border-radius: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 30px 35px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #a6249d;
+  margin-top: 50px;
+  align-self: center;
+}
+
+.devotional-cards {
+  flex-direction: row;
+  padding: 75px 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+}
+
+.devotional-cards .dev-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 400px;
+  color: #fff;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.devotional-cards .dev-card .img-container {
+  overflow: hidden;
+  max-height: 250px;
+}
+
+.devotional-cards .dev-card img {
+  width: 100%;
+  transform: translateY(-20%);
+}
+
+.devotional-cards .dev-card .tb-container {
+  background-color: #a6249d;
+  padding: 20px 30px 80px 30px;
+}
+
+.devotional-cards .dev-card .tb-container h3,
+.devotional-cards .dev-card .tb-container h4 {
+  font-size: 1.5625rem;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.devotional-cards .dev-card .tb-container h4 {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
